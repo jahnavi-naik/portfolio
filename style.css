@@ -67,6 +67,10 @@ body {
     grid-column: 1 / -1; 
   }
 
+  form button {
+    grid-column: 1 / -1; 
+  }
+
   .projects {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
