@@ -1,5 +1,5 @@
 html {
-  --color-accent: oklch(65% 50% 0);
+  --color-accent: #06402B;
   accent-color: var(--color-accent);
 }
 
