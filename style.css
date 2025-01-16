@@ -20,6 +20,7 @@ body {
     margin: auto;
     padding: 5ch;
     font: 100%/1.5 system-ui;
+    font-family: "Times New Roman", Times, serif;
   }
 
   nav {
@@ -81,3 +82,4 @@ body {
   .projects h2 {
     margin: 0;
   }
+  
