@@ -1,4 +1,5 @@
 html {
+  color-scheme: light dark;
   --color-accent: #06402B;
   accent-color: var(--color-accent);
 }
@@ -28,7 +29,7 @@ body {
     margin-bottom: 20px;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-    border-bottom-color: oklch(80% 3% 200);
+    border-bottom-color: oklch(50% 10% 200 / 40%);
 
   }
 
@@ -44,7 +45,7 @@ body {
   nav a.current {
     border-bottom-width: 0.4em;
     border-bottom-style: solid;
-    border-bottom-color: oklch(80% 3% 200);
+    border-bottom-color: oklch(50% 10% 200 / 40%);
     padding-bottom: 0.1em;
   }
 
@@ -52,7 +53,7 @@ body {
     border-bottom-width: 0.4em;
     border-bottom-style: solid;
     border-bottom-color: var(--color-accent);
-    background-color: oklch(from var(--color-accent) 95% 5% h);
+    background-color:color-mix(in oklch, var(--color-accent), canvas 85%);
   }
 
   form {
@@ -85,5 +86,20 @@ body {
 
   .projects h2 {
     margin: 0;
+  }
+  
+  #color-scheme-container {
+    position: absolute;   
+    top: 1rem;            
+    right: 1rem;
+  }
+
+  #color-scheme-container label {
+    font-size: 80%;
+    font-family: inherit;
+  }
+
+  #color-scheme-container select {
+    font-family: inherit;
   }
   
