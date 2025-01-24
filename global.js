@@ -77,6 +77,21 @@ select.addEventListener('input', function (event) {
     document.documentElement.style.setProperty('color-scheme', event.target.value);
 
     localStorage.colorScheme = event.target.value;
- });
+});
 
 
+const form = document.getElementById('contactForm');
+
+form?.addEventListener('submit', (event) => {
+    event.preventDefault();
+  
+    const data = new FormData(form);
+  
+    let mailtoURL = form.action + '?';
+  
+    for (let [name, value] of data) {
+      mailtoURL += `${encodeURIComponent(name)}=${encodeURIComponent(value)}&`;
+    }
+    mailtoURL = mailtoURL.slice(0, -1);
+    location.href = mailtoURL;
+});
