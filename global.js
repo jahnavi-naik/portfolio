@@ -119,7 +119,7 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
   containerElement.innerHTML = '';
   const projectsTitle = document.querySelector('.projects-title');
   if (projectsTitle) {
-      projectsTitle.textContent = `(${project.length}) Projects`;
+      projectsTitle.textContent = `${project.length} Projects`;
   }
   
   project.forEach((project1) => {
