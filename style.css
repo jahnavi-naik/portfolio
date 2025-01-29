@@ -102,4 +102,31 @@ body {
   #color-scheme-container select {
     font-family: inherit;
   }
+
+  #profile-stats {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+  }
   
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .stats-grid dt {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #6c757d;
+    font-weight: bold;
+    grid-row: 1;
+  }
+  
+  .stats-grid dd {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+    grid-row: 2;
+  }
