@@ -7,7 +7,7 @@ const githubData = await fetchGitHubData('jahnavi-naik');
 const profileStats = document.querySelector('#profile-stats');
 if (profileStats) {
     profileStats.innerHTML = `
-          <dl>
+          <dl class="stats-grid">
             <dt>Public Repos:</dt><dd>${githubData.public_repos}</dd>
             <dt>Public Gists:</dt><dd>${githubData.public_gists}</dd>
             <dt>Followers:</dt><dd>${githubData.followers}</dd>
