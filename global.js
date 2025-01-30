@@ -4,17 +4,6 @@ function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
 
-// const navLinks = $$("nav a");
-
-// let currentLink = navLinks.find(
-//     (a) => a.host === location.host && a.pathname === location.pathname
-//   );
-
-//   if (currentLink) {
-//     // or if (currentLink !== undefined)
-//     currentLink.classList.add('current');
-//   }
-
 const ARE_WE_HOME = document.documentElement.classList.contains('home');
 
 let pages = [
@@ -115,7 +104,6 @@ export async function fetchJSON(url) {
 }
 
 export function renderProjects(project, containerElement, headingLevel = 'h2') {
-  // Your code will go here
   containerElement.innerHTML = '';
   const projectsTitle = document.querySelector('.projects-title');
   if (projectsTitle) {
@@ -134,6 +122,5 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
 
 }
 export async function fetchGitHubData(username) {
-  // return statement here
   return fetchJSON(`https://api.github.com/users/${username}`);
 }
