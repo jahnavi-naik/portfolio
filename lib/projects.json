@@ -1,61 +1,73 @@
 [
     {
-        "title": "Lorem ipsum dolor sit.",
+        "title": "Sunny, Cloudy, Wet, or Dry: How Cities Compare on Weather Annually",
+        "year": "2025", 
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. At, odit sapiente sit a, eos accusamus reiciendis eligendi perferendis, mollitia eveniet illum aliquid sunt magni incidunt? Eius reiciendis vel quidem quos?"
+        "description": "This is a visual I created in Tableau based on a dataset that included monthly rainfall inches and sunshine hours for 6 cities. The goal of this visual is to discover which cities bask in the sun, soak in the rain, or strike the perfect weather balance."
     },
     {
-        "title": "Eos ducimus modi adipisci?",
+        "title": "Hangman Simulator",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Distinctio, officia! Consequatur expedita iusto aliquid blanditiis, fugiat quibusdam molestiae totam culpa nisi dolore, id voluptate corporis. Quos eius excepturi iusto! Temporibus dicta facilis, aspernatur dolores voluptates quidem minus porro?"
+        "description": "For this project, I wanted to make a function that could beat hangman every time. I started by making a random inference function that would randomly choose the next letter to guess as a benchmark. I then created a function using bayesian inference, that was able to score an 93.8% accuracy after playing 1000 games."
     },
     {
-        "title": "Temporibus impedit non obcaecati?",
+        "title": "Predicting Recipe Ratings",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Nobis ratione sint possimus labore corporis sequi odit, fuga dicta facilis iste tenetur assumenda minus, debitis velit facere vel esse voluptatibus voluptatem harum accusantium soluta quod. Asperiores consequuntur facere ab."
+        "description": "This was my final project for my dsc80 class. I was given a raw dataset, taken from food.com, of recipes along with ratings and reviews given by real people. I created a Random Forest Classification mode, and used Grid Search CV to determine the best hyperparameters for the model. After trying many different combinations of variables, I was able to create a model with an F-1 score of 0.91."
     },
     {
-        "title": "Inventore magnam est hic?",
+        "title": "COVID's Affect on Stress Levels",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Doloremque voluptatum sunt amet iusto maxime neque, eaque quasi ab illo minima numquam, aut obcaecati animi sequi optio corporis. Odio non id esse modi, nihil maiores commodi. Sint, iusto quasi?"
+        "description": "This project focused on the exploratory data analysis step of the data science lifecycle. WE wanted to determine the how the shift to remote work because of COVID affected the mental health of femal employees in healthcare, retail, and education in North Anmerica. Thoughout this project, we focused in creating a focused research questions, and heavily exploring our data to reach our conclusions."
     },
     {
-        "title": "Dignissimos quod voluptate velit.",
+        "title": "Ngram Model",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Minima tempore recusandae quibusdam sapiente, est possimus incidunt necessitatibus nesciunt repudiandae, corporis sunt rerum aperiam repellat, quis maxime voluptate mollitia vero illum? Nostrum eveniet error consequatur non, laboriosam in sint?"
+        "description": "In this project, I used a large dataset of books to train an Ngram model to determine the probability of a word appearing in a sequence given N words. This can be used for natural language processing."
     },
     {
-        "title": "Non quis maxime fuga!",
+        "title": "Lender Decision Making",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Laudantium impedit inventore nobis, voluptatum, dolore ipsam placeat soluta nulla dignissimos ab ex, quia quis. Aperiam illum placeat voluptatum dolore. Doloremque, illo sed iusto aspernatur excepturi voluptatem non magni. Sint."
+        "description": "This project focused on seeing the different variables that influenced the decision for banks to give out loans. We explored a dataset that had informaiton about this, and explored the different variables to understand their relationships with the loans and interest rates given."
     },
     {
-        "title": "Corporis ad magnam quaerat.",
+        "title": "Disney Plus Statistics",
+        "year": "2023",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Consequatur blanditiis quibusdam cum in modi debitis accusantium quasi ex minima. Aliquam, a ab libero eos sunt accusantium alias at omnis doloremque dignissimos delectus facilis. Similique accusamus ipsam sunt expedita."
+        "description": "For this project, I wanted to practice creating visualizations in Tableu. To do this, I first found a dataset from Kaggle containing statistics about the Disney Plus streaming service. I then cleaned the data and created different visualizations about the trends. This is my first project in Tableu, so it really allowed me to play with the different features and familiarize myself with all that it can do. It made me really understand the data and what is was telling me in order to create visualizations."
     },
     {
-        "title": "Labore quo ipsa id.",
+        "title": "Will Driver Accept the coupon?",
+        "year": "2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Perspiciatis nisi id delectus ea at asperiores consectetur, quidem ratione est tempora distinctio esse ab hic fuga totam natus quae? Dicta, quos nisi non laborum cupiditate tenetur quis velit vitae?"
+        "description": "I completed this project with a group in my CS105 class. We found the dataset through the UCI repository, cleaned the data, created visualizations to display different aspects of the data, and ran a K Nearest Neighbors Analysis, yeilding a model with 66% accuracy. All work was done using Python though Jupyter Notebook. Thorugh this project, I got real experience collaborating with my group members and splitting up the work in an effecient way. I learned the importance of constant communication to successfully complete the project"
     },
     {
-        "title": "Quisquam aut eaque quas.",
+        "title": "Titanic Survival",
+        "year": "2021",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Eos facere adipisci animi deleniti alias, inventore quo reiciendis doloremque, corporis ea quasi sit repudiandae debitis aliquam voluptatum, quaerat odio repellat accusantium deserunt dolore consequatur quam? Eaque accusamus reiciendis tempora."
+        "description": "This Kaggle competition was about creating a model that would determine if the passenger survived or not, using the given data. I used the given training set to train my Decision Trees model, selecting my features using the select best k algorithm, and then used that model on the test set, obtaining an accuracy score of 78%. I did this work using Python using a Jupyter notebook, and later uploaded it to Kaggle. This project allowed my to expand my knowledge on various maching learning models, as I had never used the decidion trees model previously. It gave me lots of practice on cleaning and transforming the data on order for it to be used for the model, and gave me practice in python in general. "
     },
     {
         "title": "Veniam sunt praesentium iusto?",
+        "year": "2021",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Reiciendis repellendus, necessitatibus magni, rerum provident perspiciatis dolores temporibus enim, laboriosam excepturi quia odit? Neque officiis maiores dolorum officia tenetur provident, voluptas velit similique quidem ad quasi totam, distinctio facilis!"
     },
     {
         "title": "Optio amet delectus aut.",
+        "year": "2021",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Optio eos natus sed provident consequuntur maiores molestiae officia ea atque totam. Ipsa, inventore placeat mollitia veritatis quasi ratione nostrum nihil ipsam, nesciunt amet dolorum neque dolor enim eius! Similique!"
     },
     {
         "title": "Officiis reiciendis natus amet?",
+        "year": "2020",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Itaque similique a sit ipsa. Pariatur atque doloribus delectus quae temporibus, illum sint animi cum culpa eligendi? Autem, dolore. Aperiam consequuntur alias minima atque animi nesciunt perferendis! Eligendi, ullam quas?"
     }

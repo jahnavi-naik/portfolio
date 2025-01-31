@@ -126,7 +126,6 @@ body {
   
   .stats-grid dd {
     font-size: 32px;
-    font-weight: bold;
     margin: 0;
     grid-row: 2;
   }
