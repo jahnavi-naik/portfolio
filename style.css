@@ -129,3 +129,45 @@ body {
     margin: 0;
     grid-row: 2;
   }
+
+  #projects-pie-plot {
+    max-width: 20em;
+    margin-block: 2em;
+    overflow: visible;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .legend {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+    gap: 8px;
+    border: 1px solid #ccc; 
+    padding: 12px;
+    margin: 16px 0; 
+    background-color: transparent; 
+    border-radius: 8px; 
+    flex: 1;
+    list-style: none;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center; 
+    gap: 6px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.swatch {
+    width: 16px;
+    height: 16px;
+    background-color: var(--color); 
+    border-radius: 4px;
+    display: inline-block;
+}
+
