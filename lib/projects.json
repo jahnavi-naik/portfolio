@@ -42,7 +42,7 @@
         "description": "For this project, I wanted to practice creating visualizations in Tableu. To do this, I first found a dataset from Kaggle containing statistics about the Disney Plus streaming service. I then cleaned the data and created different visualizations about the trends. This is my first project in Tableu, so it really allowed me to play with the different features and familiarize myself with all that it can do. It made me really understand the data and what is was telling me in order to create visualizations."
     },
     {
-        "title": "Will Driver Accept the coupon?",
+        "title": "Will Driver Accept the Coupon?",
         "year": "2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "I completed this project with a group in my CS105 class. We found the dataset through the UCI repository, cleaned the data, created visualizations to display different aspects of the data, and ran a K Nearest Neighbors Analysis, yeilding a model with 66% accuracy. All work was done using Python though Jupyter Notebook. Thorugh this project, I got real experience collaborating with my group members and splitting up the work in an effecient way. I learned the importance of constant communication to successfully complete the project"
