@@ -13,6 +13,10 @@ h1 {
   font-size: 400%; 
 }
 
+h2 {
+  text-align: center;
+}
+
 body {
     /* Set line height to 1.5 times the font size
          and use the OS’s UI font as the website font
@@ -107,8 +111,9 @@ body {
     font-family: Arial, sans-serif;
     max-width: 800px;
     margin: 20px auto;
+
   }
-  
+
   .stats-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -187,4 +192,36 @@ path {
   &:is(path) {
     fill: var(--color);
   }
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.stats dl {
+  background-color: color-mix(in oklch, var(--color-accent), white 85%);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 10em;
+  flex: 1;
+}
+
+.stats dt {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #6c757d;
+  font-weight: bold;
+  grid-row: 1;
+}
+
+.stats dd {
+  font-size: 32px;
+  margin: 0;
+  grid-row: 2;
 }
