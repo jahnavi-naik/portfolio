@@ -301,3 +301,28 @@ circle.selected {
   object-fit: cover; 
   border-radius: 8px; 
 }
+
+#filter-controls {
+  display: flex;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+#filter-controls label {
+  display: flex;
+  flex: 1;
+  align-items: baseline;
+  color: #555;
+}
+
+#commitSlider {
+  margin: 0 15px;
+  flex-grow: 1;
+}
+
+#selectedTime {
+  margin-left: auto;
+  color: #0066cc;
+  font-weight: normal;
+}

@@ -1,5 +1,9 @@
 let data = [];
 let commits = [];
+let selectedCommits = [];
+let commitProgress = 100;
+let timeScale = d3.scaleTime([d3.min(commits, d => d.datetime), d3.max(commits, d => d.datetime)], [0, 100]);
+let commitMaxTime = timeScale.invert(commitProgress);
 
 async function loadData() {
     data = await d3.csv('loc.csv', (row) => ({
@@ -148,13 +152,13 @@ function createScatterplot() {
         .attr('fill', 'steelblue')
         .style('fill-opacity', 0.7)
         .on('mouseenter', (event, commit) => {
-            d3.select(event.currentTarget).style('fill-opacity', 1);
+            d3.select(event.currentTarget).style('fill-opacity', 1).classed('selected', true);
             updateTooltipContent(commit);
             updateTooltipVisibility(true);
             updateTooltipPosition(event);
         })
         .on('mouseleave', () => {
-            d3.select(event.currentTarget).style('fill-opacity', 0.7);
+            d3.select(event.currentTarget).style('fill-opacity', 0.7).classed('selected', false);
             updateTooltipContent({}); 
             updateTooltipVisibility(false);
         });
@@ -162,39 +166,69 @@ function createScatterplot() {
 
 let brushSelection = null;
 
-function brushed(event) {
-    console.log(event);
-    brushSelection = event.selection;
+// function brushed(event) {
+//     console.log(event);
+//     brushSelection = event.selection;
+//     updateSelection();
+//     updateSelectionCount();
+//     updateLanguageBreakdown()
+// }
+
+function brushed(evt) {
+    let brushSelection = evt.selection;
+    selectedCommits = !brushSelection
+      ? []
+      : commits.filter((commit) => {
+          let min = { x: brushSelection[0][0], y: brushSelection[0][1] };
+          let max = { x: brushSelection[1][0], y: brushSelection[1][1] };
+          let x = xScale(commit.date);
+          let y = yScale(commit.hourFrac);
+  
+          return x >= min.x && x <= max.x && y >= min.y && y <= max.y;
+        });
+    
     updateSelection();
     updateSelectionCount();
-    updateLanguageBreakdown()
-}
+    updateLanguageBreakdown();
+  }
 
 function isCommitSelected(commit) {
-    if (!brushSelection) {
-        return false;
-    }
-
-    const min = { x: brushSelection[0][0], y: brushSelection[0][1] };
-    const max = { x: brushSelection[1][0], y: brushSelection[1][1] };
-    const x = xScale(commit.date);
-    const y = yScale(commit.hourFrac);
-
-    return x >= min.x && x <= max.x && y >= min.y && y <= max.y;
+    return selectedCommits.includes(commit);
 }
+
+// function isCommitSelected(commit) {
+//     if (!brushSelection) {
+//         return false;
+//     }
+
+//     const min = { x: brushSelection[0][0], y: brushSelection[0][1] };
+//     const max = { x: brushSelection[1][0], y: brushSelection[1][1] };
+//     const x = xScale(commit.date);
+//     const y = yScale(commit.hourFrac);
+
+//     return x >= min.x && x <= max.x && y >= min.y && y <= max.y;
+// }
 
 function updateSelection() {
     d3.selectAll('circle').classed('selected', (d) => isCommitSelected(d));
 }
 
-function updateSelectionCount() {
-    const selectedCommits = brushSelection
-        ? commits.filter(isCommitSelected)
-        : [];
+// function updateSelectionCount() {
+//     const selectedCommits = brushSelection
+//         ? commits.filter(isCommitSelected)
+//         : [];
     
+//     const countElement = document.getElementById('selection-count');
+//     countElement.textContent = `${
+//         selectedCommits.length || 'No'
+//     } commits selected`;
+    
+//     return selectedCommits;
+// }
+function updateSelectionCount() {
     const countElement = document.getElementById('selection-count');
     countElement.textContent = `${
-        selectedCommits.length || 'No'
+      selectedCommits.length || 'No'
     } commits selected`;
     
     return selectedCommits;
@@ -239,15 +273,25 @@ function updateTooltipPosition(event) {
 }
 
 function updateLanguageBreakdown() {
-    const selectedCommits = brushSelection
-      ? commits.filter(isCommitSelected)
-      : [];
-    const container = document.getElementById('language-breakdown');
+    // const selectedCommits = brushSelection
+    //   ? commits.filter(isCommitSelected)
+    //   : [];
+    // const container = document.getElementById('language-breakdown');
   
+    // if (selectedCommits.length === 0) {
+    //   container.innerHTML = '';
+    //   return;
+    // }
+    // const requiredCommits = selectedCommits.length ? selectedCommits : commits;
+    // const lines = requiredCommits.flatMap((d) => d.lines);
+
+    const container = document.getElementById('language-breakdown');
+
     if (selectedCommits.length === 0) {
-      container.innerHTML = '';
-      return;
+        container.innerHTML = '';
+        return;
     }
+  
     const requiredCommits = selectedCommits.length ? selectedCommits : commits;
     const lines = requiredCommits.flatMap((d) => d.lines);
   
@@ -274,5 +318,9 @@ function updateLanguageBreakdown() {
 document.addEventListener('DOMContentLoaded', async () => {
     await loadData();
     createScatterplot();
+
+    const selectedTime = d3.select('#selectedTime');
+    selectedTime.textContent = timeScale.invert(commitProgress).toLocaleString();
+
     brushSelector();
 });
