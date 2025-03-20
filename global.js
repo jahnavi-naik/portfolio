@@ -11,7 +11,7 @@ let pages = [
     { url: 'projects/index.html', title: 'Projects' },
     { url: 'resume/index.html', title: 'Resume' },
     { url: 'contact/index.html', title: 'Contact'},
-    {url: 'meta/index.html', title: 'Meta'}, 
+    // {url: 'meta/index.html', title: 'Meta'}, 
     { url: 'https://github.com/jahnavi-naik', title: 'Github' },
 ];
 
@@ -118,9 +118,10 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
     let img_src = '';
     console.log(directory);
     if (directory == '') {
-      img_src = project1.image;
+      img_src = 'portfolio/' + project1.image;
     } else {
       img_src = '../' + project1.image;
+      console.log(img_src);
     }
     console.log(img_src);
     article.innerHTML = `
