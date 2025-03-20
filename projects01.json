@@ -2,56 +2,56 @@
     {
         "title": "Game Recommendation System",
         "year": "2025",
-        "image": "./images/videogames.jpg",
+        "image": "../images/videogames.jpg",
         "description": "In this project, my group and I created a game recommendation system. We obtained and cleaned a large dataset of video games on Steam along with their reviews and ratings. We also obtaaned a dataset of users and their game preferences. We then used a Hidden Markov Model to recommend 5 games to a user given their previous game preferences. Our model obtained an accuracy of 81.8%",
         "url": "https://github.com/derricknguyen12/cse150a_project"
     },
     {
         "title": "Running the Numbers: A Data-Driven Look at Treadmill Performance",
         "year": "2025",
-        "image": "./images/treadmill.jpg",
+        "image": "../images/treadmill.jpg",
         "description": "In this project, my group and I used D3 to create an interactive visualization. This visualization allows you to scroll through a timeline to see how long runners could last in a graded exercise tests. In the visual, you can scoll through to see the different runners, and the statistics of the distribution of different metrics of the runners. Clicking on a runner in the graph allows you to see their respiratory data and test conditions. Lastly, you can input your own height, weight, gender, and age to see your closest match.",
         "url": "https://jahnavi-naik.github.io/FinalProjectDSC106/"
     },
     {
         "title": "🚴‍♀️ Bikewatching",
         "year": "2025",
-        "image": "./images/biking.jpg",
+        "image": "../images/biking.jpg",
         "description": "In this project, I used D3 to create a map visualiztion. It is an interactive visualization that allows you to filter by time of day, and you can see the bike traffic in stations in Boston and Cambridge.",
         "url": "https://jahnavi-naik.github.io/bikewatching/"
     },
     {
         "title": "Sunny, Cloudy, Wet, or Dry: How Cities Compare on Weather Annually",
         "year": "2025", 
-        "image": "./images/weather.jpg",
+        "image": "../images/weather.jpg",
         "description": "This is a visual I created in Tableau based on a dataset that included monthly rainfall inches and sunshine hours for 6 cities. The goal of this visual is to discover which cities bask in the sun, soak in the rain, or strike the perfect weather balance.",
         "url": "https://public.tableau.com/app/profile/jahnavi.naik/viz/MapofAverageRainfallinchesEachYearPerCity/Sheet4"
     },
     {
         "title": "Predicting Recipe Ratings",
         "year": "2024",
-        "image": "./images/recipe.jpeg",
+        "image": "../images/recipe.jpeg",
         "description": "This was my final project for my dsc80 class. I was given a raw dataset, taken from food.com, of recipes along with ratings and reviews given by real people. I created a Random Forest Classification mode, and used Grid Search CV to determine the best hyperparameters for the model. After trying many different combinations of variables, I was able to create a model with an F-1 score of 0.91.",
         "url": "https://jahnavi-naik.github.io/recipe-analysis/"
     },
     {
         "title": "Disney Plus Statistics",
         "year": "2023",
-        "image": "./images/disney.jpg",
+        "image": "../images/disney.jpg",
         "description": "For this project, I wanted to practice creating visualizations in Tableu. To do this, I first found a dataset from Kaggle containing statistics about the Disney Plus streaming service. I then cleaned the data and created different visualizations about the trends. This is my first project in Tableu, so it really allowed me to play with the different features and familiarize myself with all that it can do. It made me really understand the data and what is was telling me in order to create visualizations.",
         "url": "https://public.tableau.com/app/profile/jahnavi.naik/viz/DisneyPlusDashboard_16914335376510/Dashboard1"
     },
     {
         "title": "Will Driver Accept the Coupon?",
         "year": "2022",
-        "image": "./images/driver.jpeg",
+        "image": "../images/driver.jpeg",
         "description": "I completed this project with a group in my CS105 class. We found the dataset through the UCI repository, cleaned the data, created visualizations to display different aspects of the data, and ran a K Nearest Neighbors Analysis, yeilding a model with 66% accuracy. All work was done using Python though Jupyter Notebook. Thorugh this project, I got real experience collaborating with my group members and splitting up the work in an effecient way. I learned the importance of constant communication to successfully complete the project",
         "url": "https://github.com/jahnavi-naik/DriverCouponProject"
     },
     {
         "title": "Titanic Survival",
         "year": "2021",
-        "image": "./images/titanic.jpeg",
+        "image": "../images/titanic.jpeg",
         "description": "This Kaggle competition was about creating a model that would determine if the passenger survived or not, using the given data. I used the given training set to train my Decision Trees model, selecting my features using the select best k algorithm, and then used that model on the test set, obtaining an accuracy score of 78%. I did this work using Python using a Jupyter notebook, and later uploaded it to Kaggle. This project allowed my to expand my knowledge on various maching learning models, as I had never used the decidion trees model previously. It gave me lots of practice on cleaning and transforming the data on order for it to be used for the model, and gave me practice in python in general.",
         "url": "https://github.com/jahnavi-naik/TitanicKaggleProject"
     }
