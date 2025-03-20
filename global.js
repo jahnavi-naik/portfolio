@@ -113,9 +113,19 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
   
   project.forEach((project1) => {
     const article = document.createElement('article');
+    const path = document.location.pathname;
+    const directory = path.substring(path.indexOf('/'), path.lastIndexOf('/'));
+    let img_src = '';
+    console.log(directory);
+    if (directory == '') {
+      img_src = project1.image;
+    } else {
+      img_src = '../' + project1.image;
+    }
+    console.log(img_src);
     article.innerHTML = `
       <h3>${project1.title} (${project1.year})</h3>
-      <img src="${project1.image}" alt="${project1.title}">
+      <img src="${img_src}" alt="${project1.title}">
       <p>${project1.description}</p>
       <a href="${project1.url}" target="_blank">View Project</a>
     `;
