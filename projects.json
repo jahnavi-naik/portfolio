@@ -9,7 +9,7 @@
     {
         "title": "Running the Numbers: A Data-Driven Look at Treadmill Performance",
         "year": "2025",
-        "image": "./images/treadmill.jpg",
+        "image": "./images/treadmill01.jpg",
         "description": "In this project, my group and I used D3 to create an interactive visualization. This visualization allows you to scroll through a timeline to see how long runners could last in a graded exercise tests. In the visual, you can scoll through to see the different runners, and the statistics of the distribution of different metrics of the runners. Clicking on a runner in the graph allows you to see their respiratory data and test conditions. Lastly, you can input your own height, weight, gender, and age to see your closest match.",
         "url": "https://jahnavi-naik.github.io/FinalProjectDSC106/"
     },
