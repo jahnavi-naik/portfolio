@@ -1,9 +1,16 @@
 [
     {
+        "title": "Wildfire Damage Prediction",
+        "year": "2026",
+        "image": "images/wildfire.jpg",
+        "description": "This project predicts whether a structure in Wildland-Urban Interface areas would be destroyed in a wildfire using publicly available data like weather, topography, and building characteristics. In partnership with Cotality, we built Random Forest and Neural Network models that achieved 89% accuracy. We also had the opportunity to present our findings to a diverse audience with varying technical backgrounds.",
+        "url": "https://reemas03.github.io/structural_damage_wui_website/"
+    },
+    {
         "title": "Game Recommendation System",
         "year": "2025",
         "image": "images/videogames.jpg",
-        "description": "In this project, my group and I created a game recommendation system. We obtained and cleaned a large dataset of video games on Steam along with their reviews and ratings. We also obtaaned a dataset of users and their game preferences. We then used a Hidden Markov Model to recommend 5 games to a user given their previous game preferences. Our model obtained an accuracy of 81.8%",
+        "description": "In this project, my group and I created a game recommendation system. We obtained and cleaned a large dataset of video games on Steam along with their reviews and ratings. We also obtained a dataset of users and their game preferences. We then used a Hidden Markov Model to recommend 5 games to a user given their previous game preferences. Our model obtained an accuracy of 81.8%",
         "url": "https://github.com/derricknguyen12/cse150a_project"
     },
     {

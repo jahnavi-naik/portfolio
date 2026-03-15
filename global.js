@@ -10,7 +10,6 @@ let pages = [
     { url: '', title: 'Home' },
     { url: 'projects/index.html', title: 'Projects' },
     { url: 'resume/index.html', title: 'Resume' },
-    { url: 'contact/index.html', title: 'Contact'},
     // {url: 'meta/index.html', title: 'Meta'}, 
     { url: 'https://github.com/jahnavi-naik', title: 'Github' },
 ];
@@ -108,7 +107,7 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
   containerElement.innerHTML = '';
   const projectsTitle = document.querySelector('.projects-title');
   if (projectsTitle) {
-      projectsTitle.textContent = `${project.length} Projects`;
+      projectsTitle.textContent = 'Projects';
   }
   
   project.forEach((project1) => {

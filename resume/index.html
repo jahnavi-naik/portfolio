@@ -1,88 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+
     <link rel="stylesheet" href="../style.css">
+
     <style>
         header {
-            align-items: center;
             text-align: center;
         }
-    </style>
-    <script src="../global.js" type="module"></script>
-</head>
-<body>
-    <h1>Resume</h1>
 
-    <header>
-        <h2>Jahnavi Naik</h2>
-        <p>Email: <a href="mailto:janaik@ucsd.edu">janaik@ucsd.edu</a> | Phone: (408) 637-9045 | LinkedIn: <a href="https://www.linkedin.com/in/jahnavinaik" target="_blank">www.linkedin.com/in/jahnavinaik</a>
-        </p>
-    </header>
-    <hr>
-    <structure id="summary">
-        <section>
+        .resume-container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 18px;
+        }
+
+        h3 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            margin-top: 8px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 40px auto;
+            padding: 30px;
+            /* font-family: Arial, Helvetica, sans-serif; */
+            line-height: 1.6;
+        }
+
+        /* Header */
+
+        header h2 {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* Section cards */
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        section h3 {
+            font-size: 1.2rem;
+            border-bottom: 2px solid #e5e5e5;
+            padding-bottom: 6px;
+            margin-top: 6px;
+            margin-bottom: 10px;
+        }
+
+        /* Lists */
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        /* Nested bullet spacing */
+
+        li ul {
+            margin-top: 6px;
+        }
+
+        /* Links */
+
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Horizontal rule */
+
+        hr {
+            border: none;
+            border-top: 1px solid #e5e5e5;
+            margin: 12px 0;
+        }
+    </style>
+
+    <script src="../global.js" type="module"></script>
+
+</head>
+
+<body>
+
+    <main class="resume-container">
+
+        <header>
+            <h2>Jahnavi Naik</h2>
+            <p>
+                <a href="mailto:naik.jahnavi@gmail.com">naik.jahnavi@gmail.com</a> |
+                (408) 637-9045 |
+                <a href="https://www.linkedin.com/in/jahnavinaik" target="_blank">LinkedIn</a>
+            </p>
+        </header>
+
+        <hr>
+
+        <section id="summary">
             <h3>Professional Summary</h3>
-            <p>I'm currently a Data Science student at UC San Diego with a 3.8 GPA, passionate about data analysis, statistical modeling, and machine learning. I've gained hands-on experience through building predictive models, creating dashboards, and developing a CPU benchmarking framework during my internship at AMD, where I presented insights to executives. Skilled in Python, SQL, and Tableau, I hold certifications in Google Data Analytics and Udemy Python Bootcamp, and I'm always excited to connect with others in tech and data.</p>
+
+            <p>
+                I’m a recent Data Science graduate from the University of California, San Diego with interests in data
+                analysis, machine learning, and applied AI. I’ve built predictive models, data pipelines, and dashboards
+                to analyze complex datasets and generate actionable insights. During my internship at AMD, I developed a
+                CPU benchmarking framework and presented performance insights to executive stakeholders, and at Lexim AI
+                I’ve worked on LLM-powered tools for analyzing FDA regulatory data. My technical toolkit includes
+                Python, SQL, machine learning, and data visualization.
+            </p>
+
         </section>
-    </structure>
-    <hr>
-    <section id="education">
-        <section>
+
+        <hr>
+
+        <section id="education">
+
             <h3>Education</h3>
+
             <ul>
-                <li><strong>University of California, San Diego</strong> <em>B.S. in Data Science</em> | Expected Graduation: <time datetime="2026">2026</time</li>
-                <ul>
-                    <li><strong>GPA:</strong> 3.8</li>
-                    <li><strong>Coursework:</strong> Linear Algebra, Data Analysis Methods, Statistical Modeling, Data Management, Machine Learning (Linear Regression, K-means Clustering, Decision Trees, Random Forest Classifiers)</li>
-                    <li><strong>Leadership:</strong> Marketing Committee at Data Science Student Society, PR Chair and high school mentor at EDGE UCSD, Web and Design Committee for Envision</li>
-                </ul> 
+
+                <li>
+                    <strong>University of California, San Diego</strong> — <em>B.S. in Data Science</em> |
+                    Graduation: <time datetime="2026">2026</time>
+
+                    <ul>
+                        <li><strong>GPA:</strong> 3.8</li>
+
+                        <li>
+                            <strong>Coursework:</strong> Linear Algebra, Data Analysis Methods, Statistical Modeling,
+                            Data Management, Machine Learning (Linear Regression, K-Means Clustering,
+                            Decision Trees, Random Forest Classifiers)
+                        </li>
+
+                        <li>
+                            <strong>Leadership:</strong> Marketing Committee at Data Science Student Society,
+                            PR Chair and high school mentor at EDGE UCSD,
+                            Web and Design Committee for Envision
+                        </li>
+
+                    </ul>
+
+                </li>
+
             </ul>
+
         </section>
-    </section>
-    <hr>
-    <structure id="projects">
-        <section>
+
+        <hr>
+
+        <section id="projects">
+
             <h3>Projects</h3>
+
             <ul>
-                <li><strong>Predicting Recipe Ratings</strong> | <time datetime="2024-04">April 2024</time></li>
-                <ul>
-                    <li>Developed a prediction model to analyze how recipe length and ingredient count affect ratings, to help cooking content creators optimize their recipes; achieved a 0.91 F1-score </li>
-                    <li>Cleaned raw dataset of recipes from food.com using python pandas.</li>
-                    <li>Ran exploratory analysis and created visualizations to better understand variables in dataset</li>
-                    <li>Used Grid Search to determine the optimal parameters for a Random Forest Classifier model</li>
-                </ul>
+
+                <li>
+                    <strong>Wildfire Structure Damage Prediction</strong> |
+                    <time datetime="2026-03">March 2026</time>
+
+                    <ul>
+                        <li>
+                            Built a binary classification machine learning model in Python (Pandas, NumPy, Scikit-learn)
+                            to predict whether structures would be destroyed during wildfire events using environmental
+                            and structural features.
+                        </li>
+
+                        <li>
+                            Performed data cleaning, exploratory data analysis (EDA), and feature engineering to
+                            identify key drivers of structure destruction risk.
+                        </li>
+
+                        <li>
+                            Trained and evaluated classification models using accuracy and F1-score to assess wildfire
+                            damage risk.
+                        </li>
+
+                        <li>
+                            Presented findings and visualizations at a capstone research showcase to audiences with
+                            diverse technical backgrounds.
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li>
+                    <strong>Predicting Recipe Ratings</strong> |
+                    <time datetime="2024-04">April 2024</time>
+
+                    <ul>
+
+                        <li>
+                            Developed a prediction model to analyze how recipe length and ingredient count affect
+                            ratings to help cooking content creators optimize their recipes; achieved a 0.91 F1-score.
+                        </li>
+
+                        <li>
+                            Cleaned and processed a dataset of 100k+ recipes from food.com using Python Pandas.
+                        </li>
+
+                        <li>
+                            Performed exploratory data analysis and created visualizations to understand key dataset
+                            variables.
+                        </li>
+
+                        <li>
+                            Used Grid Search to determine optimal parameters for a Random Forest classifier.
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li>
+                    <strong>Disney Plus Dashboard</strong> |
+                    <time datetime="2024-03">March 2024</time>
+
+                    <ul>
+
+                        <li>
+                            Designed and deployed interactive Tableau dashboards analyzing directors, movie ratings, and
+                            streaming content trends.
+                        </li>
+
+                        <li>
+                            Preprocessed and cleaned streaming datasets using Python Pandas.
+                        </li>
+
+                        <li>
+                            Created visualizations to generate insights on content distribution and audience trends.
+                        </li>
+
+                    </ul>
+
+                </li>
+
             </ul>
+
         </section>
-    </structure>
-    <hr>
-    <structure id="experience">
-        <section>
+
+        <hr>
+
+        <section id="experience">
+
             <h3>Experience</h3>
+
             <ul>
-                <li><strong>Software Engineering Intern</strong> | <time datetime="2024-06">June - Sept 2024</time></li>
-                <ul>
-                    <li>Developed a benchmarking framework to analyze AMD CPU performance across various AI models, extracting actionable insights</li>
-                    <li>Conducted large-scale experiments to evaluate the impact of system configurations on latency and throughput.</li>
-                    <li>Presented findings to executive leadership, highlighting an 11x improvement in performance metrics and their business implications.</li>
-                </ul>
+
+                <li>
+                    <strong>Data Science Intern – Lexim AI</strong> |
+                    <time datetime="2025-06">June 2025 – Present</time>
+
+                    <ul>
+
+                        <li>
+                            Analyzed large-scale FDA regulatory submissions and public feedback for medical devices
+                            using Python and LLM tools (Google Gemini, PyPDF2) to support healthcare product
+                            development.
+                        </li>
+
+                        <li>
+                            Developed a Retrieval-Augmented Generation (RAG) LLM chatbot with a React interface and API
+                            integrations, reducing time to relevant regulatory information by 50%.
+                        </li>
+
+                        <li>
+                            Built a machine learning classification system to predict FDA medical device regulatory
+                            class using web data extraction and model training.
+                        </li>
+
+                        <li>
+                            Developed a full-stack data pipeline and analytics dashboard (Flask, React, PostgreSQL) to
+                            track platform CPU usage and credit consumption.
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li>
+                    <strong>Software Engineering Intern – AMD</strong> |
+                    <time datetime="2024-06">June – Sept 2024</time>
+
+                    <ul>
+
+                        <li>
+                            Benchmarked AMD CPU performance across multiple AI models, analyzing latency and throughput
+                            under varying workloads.
+                        </li>
+
+                        <li>
+                            Conducted large-scale experiments and statistical analysis to evaluate system configuration
+                            performance.
+                        </li>
+
+                        <li>
+                            Presented findings to executive leadership, highlighting an 11× improvement in performance
+                            metrics and business implications.
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li>
+                    <strong>Substitute Preschool Teacher – Montecito Preschool</strong> |
+                    <time datetime="2022-07">July 2022 – May 2024</time>
+
+                    <ul>
+
+                        <li>
+                            Led and supervised classrooms of 20+ children, fostering engagement, safety, and structured
+                            learning.
+                        </li>
+
+                        <li>
+                            Adapted lesson plans and classroom management strategies in real time, strengthening
+                            communication and problem-solving skills.
+                        </li>
+
+                    </ul>
+
+                </li>
+
             </ul>
+
         </section>
-    </structure>
-    <hr>
-    <structure id="skills">
-        <section>
+
+        <hr>
+
+        <section id="skills">
+
             <h3>Skills and Certifications</h3>
+
             <ul>
-                <li><strong>Languages / Libraries:</strong>Languages / Libraries: Python (Pandas, Numpy, Matplotlib, Seaborn, Scikit-learn), SQL, PostgreSQL, R, C++</li>
-                <li><strong>Tools:</strong> Jupyter Notebook, Microsoft Excel, PowerPoint, Tableau, Git, Canva, Mailchimp</li>
+
+                <li>
+                    <strong>Languages / Libraries:</strong>
+                    Python (Pandas, Numpy, Scikit-learn, Matplotlib, Seaborn, JSON Parsing), SQL, PostgreSQL, BigQuery
+                    (GCP), R, C++, Flask, RESTful APIs, HTML/CSS/JavaScript, React
+
+                </li>
+
+                <li>
+                    <strong>Tools:</strong>
+                    Tableau, PowerBI, Jupyter Notebook, Git, Microsoft Office (Excel, PowerPoint, Outlook), Canva,
+                    Mailchimp, Cursor, Prompt Engineering (LLMs), Jira, QGIS, AWS
+
+                </li>
+
                 <li>Google Data Analytics Certification</li>
+
                 <li>Udemy Python Bootcamp Certification</li>
+
             </ul>
+
         </section>
-    </structure>
+
+    </main>
 
 </body>
+
 </html>
